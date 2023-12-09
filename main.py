@@ -23,11 +23,13 @@ def convert_to_seconds(time_str):
 #Funzione per richiedere all'utente di quale partita intende visualizzare le statistiche
 def create_url():
     # richiede all'utente di inserire il game code e il season code
+    league = input("Scegli tra Eurocup (U) e Eurolega(E): ")
     season_code = input("Inserisci il season code: ")
     game_code = input("Inserisci il game code: ")
+    
 
     # costruisce l'URL utilizzando i valori inseriti dall'utente
-    link = f"https://live.euroleague.net/api/PlaybyPlay?gamecode={game_code}&seasoncode=E{season_code}"
+    link = f"https://live.euroleague.net/api/PlaybyPlay?gamecode={game_code}&seasoncode={league}{season_code}"
     
     #Fa una richiesta GET all'URL e restituisce la risposta
     response = requests.get(url=link).json()
