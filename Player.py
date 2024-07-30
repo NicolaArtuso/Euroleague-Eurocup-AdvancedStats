@@ -92,7 +92,7 @@ class PlayerStat:
     
     #Calcola le 'shooting chances' o 'plays' del giocatore
     def c_sc(self):
-        return (self.count_stat(['2FGA','3FGA','RV','2FGM','3FGM','SRV','TO','AS']))
+        return (self.count_stat(['2FGA','3FGA','RV','2FGM','3FGM','SRV','TO']))
     
     
     #Calcola i punti del giocatore
