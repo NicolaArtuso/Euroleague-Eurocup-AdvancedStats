@@ -329,7 +329,7 @@ class TeamStat:
             if self.count_stat(a, self.home) > 0 else 0
         )
         guest = (
-            self.points[0] / (2 * self.count_stat(a, self.guest)) * 100
+            self.points[1] / (2 * self.count_stat(a, self.guest)) * 100
             if self.count_stat(a, self.guest) > 0 else 0
         )
         return [home, guest]
