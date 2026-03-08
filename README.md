@@ -161,13 +161,4 @@ The raw API uses generic labels that need to be refined to correctly count posse
 
 ---
 
-## Known Limitations
-
-- **Possession estimation** is an approximation. Edge cases like jump balls and buzzer-beaters without a shot attempt may occasionally cause the count to be off by one.
-- **TS% for teams** currently uses the home team's points for both rows in the guest calculation — this is a bug to be fixed in a future release.
-- The script is designed for **single-game** analysis. Multi-game or season-level aggregation is not yet supported.
-- Overtime periods beyond the first (`ExtraTime`) are included in the API response but the quarter list is fixed; additional OT periods may not be captured correctly.
-
----
-
 > This tool uses the unofficial Euroleague Live API. It is not affiliated with or endorsed by Euroleague Basketball.
